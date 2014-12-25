@@ -26,7 +26,6 @@ public class StartClient {
 	    org.omg.CORBA.Object objRef =   orb.resolve_initial_references("NameService");
 	    NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
 	    Addition addobj = (Addition) AdditionHelper.narrow(ncRef.resolve_str("ABC"));
- 
             Scanner c=new Scanner(System.in);
             System.out.println("Welcome to the addition system:");          		    
 		    for(;;){
